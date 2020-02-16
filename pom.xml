@@ -125,6 +125,12 @@
                 <isRemote>false</isRemote>
             </properties>
         </profile>
+        <profile>
+            <id>remote</id>
+            <properties>
+                <isRemote>true</isRemote>
+            </properties>
+        </profile>
     </profiles>
 
     <dependencies>
