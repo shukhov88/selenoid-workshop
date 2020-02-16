@@ -31,10 +31,21 @@ class BaseTest {
 
     @BeforeTest()
     void launchRemoteDriver() {
+        Map labels = [
+                "environment" : "oxa_env",
+                "build-number": "oxa_build",
+        ]
         DesiredCapabilities dc = new DesiredCapabilities()
         dc.setCapability('browserName', BROWSER)
         dc.setCapability('version', BROWSER_VERSION)
         if (IS_REMOTE) {
+            dc.setCapability('sessionTimeout', '3m')
+            dc.setCapability('name', 'oxagile')
+//            dc.setCapability('labels', labels)
+//            dc.setCapability('screenResolution', '2500x2000x24')
+            dc.setCapability('enableVNC', true)
+            dc.setCapability('enableVideo', true)
+            dc.setCapability('enableLog', false)
             WEB_DRIVER.set(new RemoteWebDriver(new URL(HUB), dc))
             getDriver().manage().window().maximize()
         } else {

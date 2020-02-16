@@ -119,9 +119,9 @@
             </activation>
             <properties>
                 <browser>chrome</browser>
-                <browser.version>default</browser.version>
+                <browser.version>80</browser.version>
                 <suite.name>regression</suite.name>
-                <hub>http://</hub>
+                <hub>http://localhost:4444/wd/hub</hub>
                 <isRemote>false</isRemote>
             </properties>
         </profile>

@@ -1,6 +1,8 @@
 package web
 
 import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.remote.RemoteWebDriver
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.testng.Assert
 import org.testng.annotations.DataProvider
@@ -28,6 +30,7 @@ class SimpleTest extends BaseTest {
         driver.findElement(By.xpath("//input[@type = 'submit']")).click()
         waiter.until(ExpectedConditions
                 .invisibilityOfElementLocated(By.xpath("//select[@name = 'fromPort']")))
+        print("${((RemoteWebDriver) driver).getSessionId()}")
         Assert.assertEquals(driver.findElement(By.xpath("//h3")).getText(),
                 'Flights from Paris to Buenos Aires:',
                 'Incorrect header')
