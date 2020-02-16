@@ -1,0 +1,18 @@
+1. Queue size for containers with browser?
+2. Max time out for item in queue?
+3. browser container stopped, but I still see session in selenoid-ui (how can I kill this session?)
+
+sudo docker run -d --name \
+    ggr -v ~/.aerokube/ggr/quota/:/etc/grid-router:ro \
+    --net host aerokube/ggr:latest-release
+
+docker run --name \
+    ggr -v ./:/etc/grid-router:ro \
+    --net host aerokube/ggr:latest-release
+
+./ggr -quotaDir ~/.aerokube/ggr/quota/quota  -users ~/.aerokube/ggr/quota/users.htpasswd  -listen :4445
+
+
+./selenoid -s3-endpoint fra1.digitaloceanspaces.com -s3-region fra1 -s3-bucket-name selenoid-workshop -s3-access-key NRUAYVUCGSBZSDBSFOEN -s3-secret-key 8iRnTxS8PJcovJQm+NFswTuJpjCfSoY6BLonWwvHo20
+
+./selenoid -s3-endpoint fra1.digitaloceanspaces.com -s3-region fra1 -s3-bucket-name selenoid-workshop -s3-access-key NRUAYVUCGSBZSDBSFOEN -s3-secret-key 8iRnTxS8PJcovJQm+NFswTuJpjCfSoY6BLonWwvHo20 -conf ~/.aerokube/selenoid/browsers.json -video-output-dir ~/Oxagile\ projects/videoOut
