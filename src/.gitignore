@@ -1,9 +1,6 @@
 /target/
 /.idea/
 *.iml
-suites/testRailLaunch.xml
-/libs/
-edtv-automation.properties
-edtv-automation.xml
+/libs/got
 debug.log
 *.log

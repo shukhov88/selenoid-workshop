@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Web acceptance test-suite" duration-ms="5206" started-at="2020-02-16T06:53:06Z" finished-at="2020-02-16T06:53:12Z">
+    <groups>
+    </groups>
+    <test name="Thread_1" duration-ms="5055" started-at="2020-02-16T06:53:06Z" finished-at="2020-02-16T06:53:11Z">
+      <class name="web.SimpleTest">
+        <test-method status="PASS" signature="launchRemoteDriver()[pri:0, instance:web.SimpleTest@2d901eb0]" name="launchRemoteDriver" is-config="true" duration-ms="2037" started-at="2020-02-16T06:53:06Z" finished-at="2020-02-16T06:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchRemoteDriver -->
+        <test-method status="PASS" signature="parametrizedUrlTest(java.lang.String)[pri:101, instance:web.SimpleTest@2d901eb0]" name="parametrizedUrlTest" duration-ms="963" started-at="2020-02-16T06:53:08Z" data-provider="provideUrl" finished-at="2020-02-16T06:53:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://blazedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parametrizedUrlTest -->
+        <test-method status="PASS" signature="parametrizedUrlTest(java.lang.String)[pri:101, instance:web.SimpleTest@2d901eb0]" name="parametrizedUrlTest" duration-ms="1456" started-at="2020-02-16T06:53:09Z" data-provider="provideUrl" finished-at="2020-02-16T06:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parametrizedUrlTest -->
+        <test-method status="PASS" signature="simpleTest()[pri:102, instance:web.SimpleTest@2d901eb0]" name="simpleTest" duration-ms="503" started-at="2020-02-16T06:53:11Z" finished-at="2020-02-16T06:53:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest -->
+        <test-method status="PASS" signature="tearDownDriver()[pri:0, instance:web.SimpleTest@2d901eb0]" name="tearDownDriver" is-config="true" duration-ms="82" started-at="2020-02-16T06:53:11Z" finished-at="2020-02-16T06:53:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- web.SimpleTest -->
+    </test> <!-- Thread_1 -->
+    <test name="Thread_2" duration-ms="5206" started-at="2020-02-16T06:53:06Z" finished-at="2020-02-16T06:53:12Z">
+      <class name="web.SimpleTest">
+        <test-method status="PASS" signature="launchRemoteDriver()[pri:0, instance:web.SimpleTest@413d1baf]" name="launchRemoteDriver" is-config="true" duration-ms="2037" started-at="2020-02-16T06:53:06Z" finished-at="2020-02-16T06:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchRemoteDriver -->
+        <test-method status="PASS" signature="parametrizedUrlTest(java.lang.String)[pri:101, instance:web.SimpleTest@413d1baf]" name="parametrizedUrlTest" duration-ms="1032" started-at="2020-02-16T06:53:08Z" data-provider="provideUrl" finished-at="2020-02-16T06:53:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://blazedemo.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parametrizedUrlTest -->
+        <test-method status="PASS" signature="parametrizedUrlTest(java.lang.String)[pri:101, instance:web.SimpleTest@413d1baf]" name="parametrizedUrlTest" duration-ms="1596" started-at="2020-02-16T06:53:09Z" data-provider="provideUrl" finished-at="2020-02-16T06:53:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- parametrizedUrlTest -->
+        <test-method status="PASS" signature="simpleTest()[pri:102, instance:web.SimpleTest@413d1baf]" name="simpleTest" duration-ms="454" started-at="2020-02-16T06:53:11Z" finished-at="2020-02-16T06:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simpleTest -->
+        <test-method status="PASS" signature="tearDownDriver()[pri:0, instance:web.SimpleTest@413d1baf]" name="tearDownDriver" is-config="true" duration-ms="76" started-at="2020-02-16T06:53:12Z" finished-at="2020-02-16T06:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- web.SimpleTest -->
+    </test> <!-- Thread_2 -->
+  </suite> <!-- Web acceptance test-suite -->
+</testng-results>
