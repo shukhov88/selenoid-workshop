@@ -13,6 +13,4 @@ docker run --name \
 ./ggr -quotaDir ~/.aerokube/ggr/quota/quota  -users ~/.aerokube/ggr/quota/users.htpasswd  -listen :4445
 
 
-./selenoid -s3-endpoint fra1.digitaloceanspaces.com -s3-region fra1 -s3-bucket-name selenoid-workshop -s3-access-key NRUAYVUCGSBZSDBSFOEN -s3-secret-key 8iRnTxS8PJcovJQm+NFswTuJpjCfSoY6BLonWwvHo20
-
-./selenoid -s3-endpoint fra1.digitaloceanspaces.com -s3-region fra1 -s3-bucket-name selenoid-workshop -s3-access-key NRUAYVUCGSBZSDBSFOEN -s3-secret-key 8iRnTxS8PJcovJQm+NFswTuJpjCfSoY6BLonWwvHo20 -conf ~/.aerokube/selenoid/browsers.json -video-output-dir ~/Oxagile\ projects/videoOut
+./selenoid -s3-endpoint fra1.digitaloceanspaces.com -s3-region fra1 -s3-bucket-name ${name} -s3-access-key ${key} -s3-secret-key ${secret} -conf ~/.aerokube/selenoid/browsers.json -video-output-dir ~/Oxagile\ projects/videoOut
